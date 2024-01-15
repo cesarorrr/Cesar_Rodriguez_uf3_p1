@@ -1,4 +1,5 @@
-/vendor
 /.fleet
 /.idea
 /.vscode
+/vendor/
+/config/database.php

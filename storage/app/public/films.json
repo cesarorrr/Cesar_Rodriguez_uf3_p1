@@ -1,32 +1,82 @@
 [
     {
-        "name": "La Rosa Púrpura del Cairo",
+        "name": "La Rosa P\u00farpura del Cairo",
         "year": 1985,
         "genre": "Drama",
+        "country": "Texas",
+        "duration": 140,
         "img_url": "https://es.web.img2.acsta.net/medias/nmedia/18/79/45/34/20253823.jpg"
     },
     {
         "name": "El Club de los Cinco",
         "year": 1985,
         "genre": "Comedia",
+        "country": "Amsterdam",
+        "duration": 100,
         "img_url": "https://pics.filmaffinity.com/El_club_de_los_cinco-192309838-large.jpg"
     },
     {
         "name": "Forrest Gump",
         "year": 1994,
         "genre": "Drama",
+        "country": "New York",
+        "duration": 120,
         "img_url": "https://pics.filmaffinity.com/Forrest_Gump-212765827-large.jpg"
     },
     {
         "name": "Arrival",
         "year": 2016,
-        "genre": "Ciencia Ficción",
+        "genre": "Ciencia Ficci\u00f3n",
+        "country": "Madrid",
+        "duration": 180,
         "img_url": "https://pics.filmaffinity.com/La_llegada-686966912-large.jpg"
     },
     {
         "name": "As Bestas",
         "year": 2022,
         "genre": "Drama",
+        "country": "Paris",
+        "duration": 200,
         "img_url": "https://pics.filmaffinity.com/As_bestas-275688233-large.jpg"
+    },
+    {
+        "name": "Chicken Run: Dawn of the Nugget",
+        "year": 2023,
+        "genre": "Animaci\u00f3n",
+        "country": "Reino Unido",
+        "duration": 101,
+        "img_url": "https://pics.filmaffinity.com/chicken_run_dawn_of_the_nugget-363717549-large.jpg"
+    },
+    {
+        "name": "Wonka",
+        "year": 2023,
+        "genre": "Musical",
+        "country": "Reino Unido",
+        "duration": 115,
+        "img_url": "https://pics.filmaffinity.com/wonka-476523968-large.jpg"
+    },
+    {
+        "name": "Maestro",
+        "year": 2023,
+        "genre": "Drama",
+        "country": "Estados Unidos",
+        "duration": 129,
+        "img_url": "https://pics.filmaffinity.com/maestro-141384252-large.jpg"
+    },
+    {
+        "name": "La espera",
+        "year": 2023,
+        "genre": "Thriller",
+        "country": "Espa\u00f1a",
+        "duration": 100,
+        "img_url": "https://pics.filmaffinity.com/la_espera-812969950-large.jpg"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https://pics.filmaffinity.com/aquaman_and_the_lost_kingdom-274178849-large.jpg"
     }
 ]

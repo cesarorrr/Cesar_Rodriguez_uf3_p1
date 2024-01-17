@@ -1,5 +1,7 @@
-/.fleet
-/.idea
-/.vscode
-/vendor/
-/config/database.php
+/vendor
+/node_modules
+/.env
+/storage/*.key
+/storage/app/public
+/storage/logs/*
+/bootstrap/cache/*

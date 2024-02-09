@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
+
 use Illuminate\Support\Facades\Storage;
 
 class FilmController extends Controller
@@ -12,7 +14,12 @@ class FilmController extends Controller
      */
     public static function readFilms(): array
     {
-        $films = Storage::json('/public/films.json');
+        $filmsJson = Storage::json('/public/films.json');
+
+        $filmsDDBB = DB::table('films')->select('name', 'year', 'genre', 'country', 'duration', 'img_url')->get();
+        $filmsDDBBArray = json_decode(json_encode($filmsDDBB), true);
+
+        $films = array_merge($filmsJson, $filmsDDBBArray);
         return $films;
     }
     /**
@@ -52,6 +59,8 @@ class FilmController extends Controller
             if ($film['year'] >= $year)
                 $new_films[] = $film;
         }
+        dd($new_films);
+
         return view('films.list', ["films" => $new_films, "title" => $title]);
     }
     /**
@@ -151,20 +160,33 @@ class FilmController extends Controller
         if ($exist) {
             return view('welcome', ["error" => "Ya hay una pelicula registrada con este nombre"]);
         } else {
-
-            $films = FilmController::readFilms();
-            $film = [
-                'name' => $_POST['Nombre'],
-                'year' => $_POST['Ano'],
-                'genre' => $_POST['Genero'],
-                'country' => $_POST['Pais'],
-                'duration' => $_POST['Duracion'],
-                'img_url' => $_POST['Imagen'],
-            ];
-
-            $films[] = $film;
-            $jsonFilms = json_encode($films, JSON_PRETTY_PRINT);
-            Storage::put('/public/films.json', $jsonFilms);
+            $json_bbdd = DB::table('Json_BBDD')->value('Json_BBDD');
+            if ($json_bbdd) {
+                $films = FilmController::readFilms();
+                $film = [
+                    'name' => $_POST['Nombre'],
+                    'year' => $_POST['Ano'],
+                    'genre' => $_POST['Genero'],
+                    'country' => $_POST['Pais'],
+                    'duration' => $_POST['Duracion'],
+                    'img_url' => $_POST['Imagen'],
+                ];
+                $films[] = $film;
+                $jsonFilms = json_encode($films, JSON_PRETTY_PRINT);
+                Storage::put('/public/films.json', $jsonFilms);
+            } else {
+                $filmData = [
+                    'name' => $_POST['Nombre'],
+                    'year' => $_POST['Ano'],
+                    'genre' => $_POST['Genero'],
+                    'country' => $_POST['Pais'],
+                    'duration' => $_POST['Duracion'],
+                    'img_url' => $_POST['Imagen'],
+                ];
+                DB::table('films')->insert($filmData);
+                $films = FilmController::readFilms();
+            }
+            DB::table('Json_BBDD')->update(['Json_BBDD' => !$json_bbdd]);
             $title = "Listado de todas las pelis";
             return view("films.list", ["films" => $films, "title" => $title]);
         }

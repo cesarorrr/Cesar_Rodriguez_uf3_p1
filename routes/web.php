@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FilmController;
+use App\Http\Controllers\ActorController;
 use App\Http\Middleware\ValidateYear;
 use Illuminate\Support\Facades\Route;
 
@@ -38,4 +39,10 @@ Route::middleware('ValidateUrl')->group(function () {
 
         Route::post('createFilm', [FilmController::class, "createFilm"])->name('createFilm');
     });
+});
+
+Route::group(['prefix' => 'actorout'], function () {
+    Route::get('actors', [ActorController::class, "listActors"])->name('listActors');
+    Route::get('listActorsByDecade/{decade?}', [ActorController::class, "listActorsByDecade"])->where('decade', '\d{4}')->name('listActorsByDecade');
+    Route::get('countActors', [ActorController::class, "countActors"])->name('countActors');
 });

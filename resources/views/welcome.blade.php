@@ -26,7 +26,27 @@
             <li class="nav-item"><a class="nav-link" href="/filmout/films">Pelis</a></li>
             <li class="nav-item"><a class="nav-link" href="/filmout/sortFilms">Pelis Por Fecha Lanzamiento</a></li>
             <li class="nav-item"><a class="nav-link" href="/filmout/countFilms">Contador De Pelis</a></li>
+            <li class="nav-item"><a class="nav-link" href="/actorout/actors">Actores</a></li>
+            <li class="nav-item"><a class="nav-link" href="/actorout/countActors">Contador de Actores</a></li>
         </ul>
+
+
+
+        <form action="{{ route('listActorsByDecade') }}" method="get">
+            @csrf
+            <label for="decade">Select Decade:</label>
+            <select class="form-control" id="decade" name="decade" required>
+                <option value="1970">1970</option>
+                <option value="1980">1980</option>
+                <option value="1990">1990</option>
+                <option value="2000">2000</option>
+                <option value="2010">2010</option>
+                <option value="2020">2020</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+
+
 
         <div class="card mt-4 p-4">
             <h2 class="mb-4">Añadir Película</h2>

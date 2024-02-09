@@ -5,7 +5,7 @@
         "genre": "Drama",
         "country": "Texas",
         "duration": 140,
-        "img_url": "https://es.web.img2.acsta.net/medias/nmedia/18/79/45/34/20253823.jpg"
+        "img_url": "https:\/\/es.web.img2.acsta.net\/medias\/nmedia\/18\/79\/45\/34\/20253823.jpg"
     },
     {
         "name": "El Club de los Cinco",
@@ -13,7 +13,7 @@
         "genre": "Comedia",
         "country": "Amsterdam",
         "duration": 100,
-        "img_url": "https://pics.filmaffinity.com/El_club_de_los_cinco-192309838-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/El_club_de_los_cinco-192309838-large.jpg"
     },
     {
         "name": "Forrest Gump",
@@ -21,7 +21,7 @@
         "genre": "Drama",
         "country": "New York",
         "duration": 120,
-        "img_url": "https://pics.filmaffinity.com/Forrest_Gump-212765827-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/Forrest_Gump-212765827-large.jpg"
     },
     {
         "name": "Arrival",
@@ -29,7 +29,7 @@
         "genre": "Ciencia Ficci\u00f3n",
         "country": "Madrid",
         "duration": 180,
-        "img_url": "https://pics.filmaffinity.com/La_llegada-686966912-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/La_llegada-686966912-large.jpg"
     },
     {
         "name": "As Bestas",
@@ -37,7 +37,7 @@
         "genre": "Drama",
         "country": "Paris",
         "duration": 200,
-        "img_url": "https://pics.filmaffinity.com/As_bestas-275688233-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/As_bestas-275688233-large.jpg"
     },
     {
         "name": "Chicken Run: Dawn of the Nugget",
@@ -45,7 +45,7 @@
         "genre": "Animaci\u00f3n",
         "country": "Reino Unido",
         "duration": 101,
-        "img_url": "https://pics.filmaffinity.com/chicken_run_dawn_of_the_nugget-363717549-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/chicken_run_dawn_of_the_nugget-363717549-large.jpg"
     },
     {
         "name": "Wonka",
@@ -53,7 +53,7 @@
         "genre": "Musical",
         "country": "Reino Unido",
         "duration": 115,
-        "img_url": "https://pics.filmaffinity.com/wonka-476523968-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/wonka-476523968-large.jpg"
     },
     {
         "name": "Maestro",
@@ -61,7 +61,7 @@
         "genre": "Drama",
         "country": "Estados Unidos",
         "duration": 129,
-        "img_url": "https://pics.filmaffinity.com/maestro-141384252-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/maestro-141384252-large.jpg"
     },
     {
         "name": "La espera",
@@ -69,7 +69,7 @@
         "genre": "Thriller",
         "country": "Espa\u00f1a",
         "duration": 100,
-        "img_url": "https://pics.filmaffinity.com/la_espera-812969950-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/la_espera-812969950-large.jpg"
     },
     {
         "name": "Aquaman and The Lost Kingdom",
@@ -77,6 +77,190 @@
         "genre": "Fantastico",
         "country": "Estados Unidos",
         "duration": 120,
-        "img_url": "https://pics.filmaffinity.com/aquaman_and_the_lost_kingdom-274178849-large.jpg"
+        "img_url": "https:\/\/pics.filmaffinity.com\/aquaman_and_the_lost_kingdom-274178849-large.jpg"
+    },
+    {
+        "name": "Lina Littel",
+        "year": 1973,
+        "genre": "Comedy",
+        "country": "Indonesia",
+        "duration": 94,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/0099ff?text=iste"
+    },
+    {
+        "name": "Tavares Lind",
+        "year": 2004,
+        "genre": "Action",
+        "country": "Monaco",
+        "duration": 116,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=maxime"
+    },
+    {
+        "name": "Ezekiel Gleason",
+        "year": 1983,
+        "genre": "Action",
+        "country": "Poland",
+        "duration": 152,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00aadd?text=qui"
+    },
+    {
+        "name": "Dorris Nikolaus DDS",
+        "year": 1970,
+        "genre": "Action",
+        "country": "Ecuador",
+        "duration": 137,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ffdd?text=corporis"
+    },
+    {
+        "name": "Berenice Durgan",
+        "year": 1988,
+        "genre": "Action",
+        "country": "San Marino",
+        "duration": 207,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/001122?text=corrupti"
+    },
+    {
+        "name": "Floyd Fahey",
+        "year": 2001,
+        "genre": "Comedy",
+        "country": "Western Sahara",
+        "duration": 150,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/0011dd?text=rem"
+    },
+    {
+        "name": "Lucious Little",
+        "year": 2003,
+        "genre": "Sci-Fi",
+        "country": "Niue",
+        "duration": 71,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/008888?text=esse"
+    },
+    {
+        "name": "Yvette Mosciski DDS",
+        "year": 1999,
+        "genre": "Drama",
+        "country": "Reunion",
+        "duration": 37,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/006633?text=occaecati"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 2",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 3",
+        "year": "2023",
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": "120",
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman"
+    },
+    {
+        "name": "Lina Littel",
+        "year": 1973,
+        "genre": "Comedy",
+        "country": "Indonesia",
+        "duration": 94,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/0099ff?text=iste"
+    },
+    {
+        "name": "Tavares Lind",
+        "year": 2004,
+        "genre": "Action",
+        "country": "Monaco",
+        "duration": 116,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=maxime"
+    },
+    {
+        "name": "Ezekiel Gleason",
+        "year": 1983,
+        "genre": "Action",
+        "country": "Poland",
+        "duration": 152,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00aadd?text=qui"
+    },
+    {
+        "name": "Dorris Nikolaus DDS",
+        "year": 1970,
+        "genre": "Action",
+        "country": "Ecuador",
+        "duration": 137,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ffdd?text=corporis"
+    },
+    {
+        "name": "Berenice Durgan",
+        "year": 1988,
+        "genre": "Action",
+        "country": "San Marino",
+        "duration": 207,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/001122?text=corrupti"
+    },
+    {
+        "name": "Floyd Fahey",
+        "year": 2001,
+        "genre": "Comedy",
+        "country": "Western Sahara",
+        "duration": 150,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/0011dd?text=rem"
+    },
+    {
+        "name": "Lucious Little",
+        "year": 2003,
+        "genre": "Sci-Fi",
+        "country": "Niue",
+        "duration": 71,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/008888?text=esse"
+    },
+    {
+        "name": "Yvette Mosciski DDS",
+        "year": 1999,
+        "genre": "Drama",
+        "country": "Reunion",
+        "duration": 37,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/006633?text=occaecati"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 2",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 4",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 5",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 8",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman8"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 9",
+        "year": "2023",
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": "120",
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman9"
     }
 ]

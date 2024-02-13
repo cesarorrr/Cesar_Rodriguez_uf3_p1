@@ -49,7 +49,7 @@ class ActorController extends Controller
 
         return view("actors.list", ["actors" => $actorsArray, "title" => $title]);
     }
-    public function countActors($genre = null)
+    public function countActors()
     {
 
         $title = "Contador Actores";

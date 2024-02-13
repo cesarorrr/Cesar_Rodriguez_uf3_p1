@@ -13,7 +13,7 @@ class ActorController extends Controller
      */
     public static function readActors()
     {
-        $actors = DB::table('actors')->select('name', 'surname', 'birtdate', 'country', 'img_url')->get();
+        $actors = DB::table('actors')->select('name', 'surname', 'birtdate', 'country', 'img_url')->paginate(10);
         $actorsArray = json_decode(json_encode($actors), true);
 
 
@@ -26,6 +26,7 @@ class ActorController extends Controller
 
         $title = "Listado de todos los actores";
         $actors = ActorController::readActors();
+        // dd($actors);
         return view("actors.list", ["actors" => $actors, "title" => $title]);
     }
     public function listActorsByDecade(Request $request)

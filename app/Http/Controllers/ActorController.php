@@ -17,7 +17,6 @@ class ActorController extends Controller
         $actorsArray = json_decode(json_encode($actors), true);
 
 
-
         return $actorsArray;
     }
 
@@ -26,7 +25,6 @@ class ActorController extends Controller
 
         $title = "Listado de todos los actores";
         $actors = ActorController::readActors();
-        // dd($actors);
         return view("actors.list", ["actors" => $actors, "title" => $title]);
     }
     public function listActorsByDecade(Request $request)

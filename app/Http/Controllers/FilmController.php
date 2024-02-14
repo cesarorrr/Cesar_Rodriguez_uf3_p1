@@ -193,13 +193,6 @@ class FilmController extends Controller
     }
     public function isFilm($name = null): bool
     {
-        $exist = false;
-        $films = FilmController::readFilms();
-        foreach ($films as $film) {
-            if ($film['name'] === $name) {
-                $exist = true;
-            }
-        }
-        return $exist;
+        return DB::table('films')->where('name', $name)->exists();
     }
 }

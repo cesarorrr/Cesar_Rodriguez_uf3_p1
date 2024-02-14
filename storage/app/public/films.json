@@ -374,5 +374,125 @@
         "country": "Estados Unidos",
         "duration": "120",
         "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman11"
+    },
+    {
+        "name": "Lina Littel",
+        "year": 1973,
+        "genre": "Comedy",
+        "country": "Indonesia",
+        "duration": 94,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/0099ff?text=iste"
+    },
+    {
+        "name": "Tavares Lind",
+        "year": 2004,
+        "genre": "Action",
+        "country": "Monaco",
+        "duration": 116,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=maxime"
+    },
+    {
+        "name": "Ezekiel Gleason",
+        "year": 1983,
+        "genre": "Action",
+        "country": "Poland",
+        "duration": 152,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00aadd?text=qui"
+    },
+    {
+        "name": "Dorris Nikolaus DDS",
+        "year": 1970,
+        "genre": "Action",
+        "country": "Ecuador",
+        "duration": 137,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/00ffdd?text=corporis"
+    },
+    {
+        "name": "Berenice Durgan",
+        "year": 1988,
+        "genre": "Action",
+        "country": "San Marino",
+        "duration": 207,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/001122?text=corrupti"
+    },
+    {
+        "name": "Floyd Fahey",
+        "year": 2001,
+        "genre": "Comedy",
+        "country": "Western Sahara",
+        "duration": 150,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/0011dd?text=rem"
+    },
+    {
+        "name": "Lucious Little",
+        "year": 2003,
+        "genre": "Sci-Fi",
+        "country": "Niue",
+        "duration": 71,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/008888?text=esse"
+    },
+    {
+        "name": "Yvette Mosciski DDS",
+        "year": 1999,
+        "genre": "Drama",
+        "country": "Reunion",
+        "duration": 37,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/006633?text=occaecati"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 2",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 4",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 5",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 8",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman8"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 10",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman10"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 11",
+        "year": 2023,
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": 120,
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman11"
+    },
+    {
+        "name": "Aquaman and The Lost Kingdom 12",
+        "year": "2023",
+        "genre": "Fantastico",
+        "country": "Estados Unidos",
+        "duration": "120",
+        "img_url": "https:\/\/via.placeholder.com\/640x480.png\/005555?text=Aquaman12"
     }
 ]

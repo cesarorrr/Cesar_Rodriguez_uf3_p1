@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Actor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -13,7 +14,7 @@ class ActorController extends Controller
      */
     public static function readActors()
     {
-        $actors = DB::table('actors')->select('name', 'surname', 'birtdate', 'country', 'img_url')->paginate(10);
+        $actors = Actor::where('name', 'surname', 'birtdate', 'country',  'img_url')->paginate(10);
         $actorsArray = json_decode(json_encode($actors), true);
 
 
@@ -39,9 +40,7 @@ class ActorController extends Controller
         $startYear = $decade;
         $endYear = $decade + 9;
 
-        $actors = DB::table('actors')
-            ->select('name', 'surname', 'birtdate', 'country', 'img_url')
-            ->whereYear('birtdate', '>=', $startYear)
+        $actors = Actor::whereYear('birtdate', '>=', $startYear)
             ->whereYear('birtdate', '<=', $endYear)
             ->get();
         $actorsArray = json_decode(json_encode($actors), true);
@@ -52,16 +51,17 @@ class ActorController extends Controller
     {
 
         $title = "Contador Actores";
-        $actors = DB::table('actors')->count();
+        $actors = Actor::count();
         return view("actors.count", ["actors" => $actors, "title" => $title]);
     }
     public function deleteActor($id)
     {
-        $delete =  DB::table('actors')->where('id', $id)->delete();
-        if ($delete) {
-            return response()->json(['action' => $delete, "status" => "true"]);
+        $actor = Actor::find($id);
+        $actor->delete();
+        if ($actor) {
+            return response()->json(['action' => $actor, "status" => "true"]);
         } else {
-            return response()->json(['action' => $delete, "status" => "false"]);
+            return response()->json(['action' => $actor, "status" => "false"]);
         }
     }
 }

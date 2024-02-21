@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\DB;
+use App\Models\Film;
+use App\Models\Token;
 
 use Illuminate\Support\Facades\Storage;
 
@@ -16,7 +17,7 @@ class FilmController extends Controller
     {
         $filmsJson = Storage::json('/public/films.json');
 
-        $filmsDDBB = DB::table('films')->select('name', 'year', 'genre', 'country', 'duration', 'img_url')->get();
+        $filmsDDBB = Film::all();
         $filmsDDBBArray = json_decode(json_encode($filmsDDBB), true);
 
         $films = array_merge($filmsJson, $filmsDDBBArray);
@@ -92,57 +93,57 @@ class FilmController extends Controller
         }
         return view("films.list", ["films" => $films_filtered, "title" => $title]);
     }
-    public function filmsByYear($year = null)
-    {
-        $films_filtered = [];
+    // public function filmsByYear($year = null)
+    // {
+    //     $films_filtered = [];
 
-        $title = "Listado de todas las pelis";
-        $films = FilmController::readFilms();
+    //     $title = "Listado de todas las pelis";
+    //     $films = FilmController::readFilms();
 
-        //if year and genre are null
-        if (is_null($year))
-            return view('films.list', ["films" => $films, "title" => $title]);
+    //     //if year and genre are null
+    //     if (is_null($year))
+    //         return view('films.list', ["films" => $films, "title" => $title]);
 
-        //list based on year informed
-        foreach ($films as $film) {
-            if (!is_null($year) && $film['year'] == $year) {
-                $title = "Listado de todas las pelis filtrado x año";
-                $films_filtered[] = $film;
-            }
-        }
-        return view("films.list", ["films" => $films_filtered, "title" => $title]);
-    }
-    public function filmsByGenre($genre = null)
-    {
-        $films_filtered = [];
+    //     //list based on year informed
+    //     foreach ($films as $film) {
+    //         if (!is_null($year) && $film['year'] == $year) {
+    //             $title = "Listado de todas las pelis filtrado x año";
+    //             $films_filtered[] = $film;
+    //         }
+    //     }
+    //     return view("films.list", ["films" => $films_filtered, "title" => $title]);
+    // }
+    // public function filmsByGenre($genre = null)
+    // {
+    //     $films_filtered = [];
 
-        $title = "Listado de todas las pelis";
-        $films = FilmController::readFilms();
+    //     $title = "Listado de todas las pelis";
+    //     $films = FilmController::readFilms();
 
-        //if year and genre are null
-        if (is_null($genre))
-            return view('films.list', ["films" => $films, "title" => $title]);
+    //     //if year and genre are null
+    //     if (is_null($genre))
+    //         return view('films.list', ["films" => $films, "title" => $title]);
 
-        //list based on genre informed
-        foreach ($films as $film) {
-            if (is_null($genre)) {
-                $title = "Listado de todas las pelis filtrado x genereo";
-                $films_filtered[] = $film;
-            }
-        }
-        return view("films.list", ["films" => $films_filtered, "title" => $title]);
-    }
-    public function sortFilms()
-    {
-        $title = "Listado de todas las pelis de nuevas a mas antiguas";
-        $films = FilmController::readFilms();
+    //     //list based on genre informed
+    //     foreach ($films as $film) {
+    //         if (is_null($genre)) {
+    //             $title = "Listado de todas las pelis filtrado x genereo";
+    //             $films_filtered[] = $film;
+    //         }
+    //     }
+    //     return view("films.list", ["films" => $films_filtered, "title" => $title]);
+    // }
+    // public function sortFilms()
+    // {
+    //     $title = "Listado de todas las pelis de nuevas a mas antiguas";
+    //     $films = FilmController::readFilms();
 
-        usort($films, function ($a, $b) {
-            return $b['year'] - $a['year'];
-        });
+    //     usort($films, function ($a, $b) {
+    //         return $b['year'] - $a['year'];
+    //     });
 
-        return view("films.list", ["films" => $films, "title" => $title]);
-    }
+    //     return view("films.list", ["films" => $films, "title" => $title]);
+    // }
     public function countFilms()
     {
 
@@ -160,7 +161,7 @@ class FilmController extends Controller
         if ($exist) {
             return view('welcome', ["error" => "Ya hay una pelicula registrada con este nombre"]);
         } else {
-            $json_bbdd = DB::table('Json_BBDD')->value('Json_BBDD');
+            $json_bbdd = Token::first();
             if ($json_bbdd) {
                 $films = FilmController::readFilms();
                 $film = [
@@ -175,24 +176,26 @@ class FilmController extends Controller
                 $jsonFilms = json_encode($films, JSON_PRETTY_PRINT);
                 Storage::put('/public/films.json', $jsonFilms);
             } else {
-                $filmData = [
+                $filmData = new Film([
                     'name' => $_POST['Nombre'],
                     'year' => $_POST['Ano'],
                     'genre' => $_POST['Genero'],
                     'country' => $_POST['Pais'],
                     'duration' => $_POST['Duracion'],
                     'img_url' => $_POST['Imagen'],
-                ];
-                DB::table('films')->insert($filmData);
+                ]);
+                $filmData->save();
                 $films = FilmController::readFilms();
             }
-            DB::table('Json_BBDD')->update(['Json_BBDD' => !$json_bbdd]);
+            // dd($json_bbdd);
+            $json_bbdd->Json_BBDD = !$json_bbdd->Json_BBDD;
+            $json_bbdd->save();
             $title = "Listado de todas las pelis";
             return view("films.list", ["films" => $films, "title" => $title]);
         }
     }
     public function isFilm($name = null): bool
     {
-        return DB::table('films')->where('name', $name)->exists();
+        return Film::where('name', $name)->exists();
     }
 }
